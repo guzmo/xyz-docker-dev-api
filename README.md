@@ -2,7 +2,7 @@
 
 It will start an local REST Api running on localhost:3131/api/.
 
-Documentation about the REST API can be found here [https://github.com/Softhouse/laughing-batman](https://github.com/Softhouse/laughing-batman "Laughing-batman")
+Documentation about the REST API can be found at [https://github.com/Softhouse/laughing-batman](https://github.com/Softhouse/laughing-batman "Laughing-batman")
 
 To use this local api you need to install:
 
