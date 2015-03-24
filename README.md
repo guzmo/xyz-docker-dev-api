@@ -53,7 +53,7 @@ Use *vagrant destroy* to remove everything and than do *vagrant up* again.
 
 **Error when docker containers are starting?**
 
-Enter the Vagrant box by using the command *vagrant ssh*.
+Enter the Vagrant box by using the command *vagrant ssh* in the same folder as the Vagrantfile.
 When inside:
 
     cd /vagrant
