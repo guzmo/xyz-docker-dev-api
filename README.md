@@ -9,12 +9,18 @@ To use this local api you need to install:
 1.  Vagrant [https://www.vagrantup.com/](https://www.vagrantup.com/ "Vagrant")
 2.  VirtualBox Manager [http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html "VM Manager")
 
-When you have these installed go to your folder where you cloned this repo and execute:
+Inside your local repository you need to create a file called **github_secret.env**.
+The API uses this in production so it is needed here as well.
+
+This file should only contain one row which is
+
+    GITHUB_SECRET=THISISMYSUPERSECRET
+
+If you have followed the above steps you should now be able to go to your folder where you cloned this repo and execute:
 
     vagrant up
 
 If you now look in your VirtualBoxManager you should see a new box popup.
-
 
 ## Forward ports in VirtualBoxManager ##
 When it has started you need to forward some ports to be able to reach the API on your machine.
