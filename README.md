@@ -1,6 +1,6 @@
 # This is a Repository for developing to XYZ #
 
-It will start an local REST Api running on localhost:3131/api/.
+It will start a local REST Api running on localhost:3131/api/.
 
 Documentation about the REST API can be found at [https://github.com/Softhouse/laughing-batman](https://github.com/Softhouse/laughing-batman "Laughing-batman")
 
@@ -49,7 +49,7 @@ All done, you should now be able to reach the API in a browser or with curl on:
 
 **Something goes wrong when you use *vagrant up:*** 
 
-Use *vagrant destroy* to remove everything and than do *vagrant up* again.
+Use *vagrant destroy* to remove everything and then do *vagrant up* again.
 
 **Error when docker containers are starting?**
 
