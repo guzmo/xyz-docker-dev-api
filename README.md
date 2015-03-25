@@ -1,6 +1,6 @@
 # This is a Repository for developing to XYZ #
 
-It will start a local REST Api running on localhost:3131/api/.
+It will start a local REST Api running on localhost:3232/api/.
 
 Documentation about the REST API can be found at [https://github.com/Softhouse/laughing-batman](https://github.com/Softhouse/laughing-batman "Laughing-batman")
 
