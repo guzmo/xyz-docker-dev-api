@@ -60,28 +60,7 @@ folder where you cloned this repo and execute:
 This will take a long time.  When it is done you can look in your
 VirtualBoxManager and you should see a new box popup.
 
-## Forward ports in VirtualBoxManager ##
-
-When it has started you need to forward some ports to be able to reach the API on your machine.
-
-This is done by selecting the newly created box and press settings.
-
-To the left you should see a side bar, click Network.
-
-In here you should see a button called something similiar to **Forward ports**, Click it!.
-
-In the upper right corner there should be a plus sign, you know what to do with it.
-Enter the credentials below:
-
-    Host IP: 127.0.0.1
-    Host Port: 3232 // Here you can choose the port of your choise
-    Guest Port: 3232
-
-And another one:
-
-    Host IP: 127.0.0.1
-    Host Port: 27017
-    Guest Port: 27017
+## Test your setup ##
 
 All done, you should now be able to reach the API in a browser or with curl on:
 
@@ -94,7 +73,7 @@ port.")
 
 ## Troubleshooting ##
 
-**Something goes wrong when you use *vagrant up:*** 
+**Something goes wrong when you use *vagrant up:***
 
 Use *vagrant destroy* to remove everything and then do *vagrant up* again.
 
