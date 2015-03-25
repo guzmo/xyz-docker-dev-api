@@ -73,18 +73,26 @@ In here you should see a button called something similiar to **Forward ports**, 
 In the upper right corner there should be a plus sign, you know what to do with it.
 Enter the credentials below:
 
-
     Host IP: 127.0.0.1
     Host Port: 3232 // Here you can choose the port of your choise
     Guest Port: 3232
+
+And another one:
+
+    Host IP: 127.0.0.1
+    Host Port: 27017
+    Guest Port: 27017
 
 All done, you should now be able to reach the API in a browser or with curl on:
 
     localhost:3232/api
 
+And the MongoDb instance that keeps all the data can be reached at
+localhost:27017 (Try going there with a web browser and you should see "It
+looks like you are trying to access MongoDB over HTTP on the native driver
+port.")
 
 ## Troubleshooting ##
-
 
 **Something goes wrong when you use *vagrant up:*** 
 

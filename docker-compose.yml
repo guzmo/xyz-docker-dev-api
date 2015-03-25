@@ -1,9 +1,7 @@
 mongodb:
     image: dockerfile/mongodb
-    expose: 
-     -  27017
     ports:
-     -  27017
+     -  27017:27017
     volumes:
      -  /var/mongo/db:/data/db
     restart: always
