@@ -75,12 +75,12 @@ Enter the credentials below:
 
 
     Host IP: 127.0.0.1
-    Host Port: 3131 // Here you can choose the port of your choise
-    Guest Port: 8080
+    Host Port: 3232 // Here you can choose the port of your choise
+    Guest Port: 3232
 
 All done, you should now be able to reach the API in a browser or with curl on:
 
-    localhost:3131/api
+    localhost:3232/api
 
 
 ## Troubleshooting ##

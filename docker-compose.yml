@@ -10,7 +10,7 @@ mongodb:
 api:
     build: github.com/Softhouse/laughing-batman.git
     ports:
-     - 8080:3232
+     - 3232:3232
     links:
      -  mongodb
     env_file: github_secret.env
