@@ -4,10 +4,46 @@ It will start a local REST Api running on localhost:3131/api/.
 
 Documentation about the REST API can be found at [https://github.com/Softhouse/laughing-batman](https://github.com/Softhouse/laughing-batman "Laughing-batman")
 
-To use this local api you need to install:
+To use this local api you need to follow these steps (assuming windows):
 
-1.  Vagrant [https://www.vagrantup.com/](https://www.vagrantup.com/ "Vagrant")
-2.  VirtualBox Manager [http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html "VM Manager")
+1. Install msysGit [https://msysgit.github.io/](https://msysgit.github.io/ "msysGit")
+2. Install VirtualBox [https://www.virtualbox.org](https://www.virtualbox.org/wiki/Downloads "VirtualBox")
+3. Install Ruby [http://rubyinstaller.org](https://rubyinstaller.org/downloads "Ruby Installer")
+   - Check "Add Ruby executables to your PATH"
+   - You can also check the other two options if you want, but it is not needed.
+4. Install Ruby Devkit [http://rubyinstaller.org/](http://rubyinstaller.org/downloads "Ruby Installer")
+   - Extract to some permanent location. I chose c:/Ruby22-x64/DevKit
+
+    ```
+    $ cd /c/Ruby22-x64/DevKit/
+    $ ruby dk.rb init
+    $ ruby dk.rb install
+    ```
+
+5. Install patched version of wdm
+
+    ```
+    $ git pull https://github.com/lowjoel/wdm
+    $ cd wdm
+    $ gem build wdm.gemspec
+    $ gem install wdm-0.1.0.gem
+    ```
+
+6. Install Vagrant
+
+    ```
+    $ git clone https://github.com/mitchellh/vagrant.git
+    $ cd vagrant
+    $ gem install bundler -v 1.7.13
+    $ bundle install
+    $ rake install
+    ```
+
+7. Clone this repo
+
+    ```
+    $ git clone https://github.com/guzmo/xyz-docker-dev-api.git
+    ```
 
 Inside your local repository you need to create a file called **github_secret.env**.
 The API uses this in production so it is needed here as well.
@@ -16,13 +52,16 @@ This file should only contain one row which is
 
     GITHUB_SECRET=THISISMYSUPERSECRET
 
-If you have followed the above steps you should now be able to go to your folder where you cloned this repo and execute:
+If you have followed the above steps you should now be able to go to your
+folder where you cloned this repo and execute:
 
     vagrant up
 
-If you now look in your VirtualBoxManager you should see a new box popup.
+This will take a long time.  When it is done you can look in your
+VirtualBoxManager and you should see a new box popup.
 
 ## Forward ports in VirtualBoxManager ##
+
 When it has started you need to forward some ports to be able to reach the API on your machine.
 
 This is done by selecting the newly created box and press settings.
