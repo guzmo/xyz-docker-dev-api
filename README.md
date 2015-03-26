@@ -122,7 +122,7 @@ This should recreate the boxes and hopefully work.
 
 **MissingInterpolationArgument:**
 
-If you get *MissingInterpolationArgument* when you run *vagrant up* you should try to install vagrant as written in section: [Vagrant the special way](#Vagrant-the-special-way)
+If you get *MissingInterpolationArgument* when you run *vagrant up* you should try to install vagrant as written in section: [Vagrant the special way](#vagrant-the-special-way)
 
 **Other known errors**
 
