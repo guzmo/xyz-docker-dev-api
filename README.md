@@ -50,7 +50,7 @@ To use this local api you need to follow these steps (assuming windows):
 5. Install patched version of wdm
 
     ```
-    $ git pull https://github.com/lowjoel/wdm
+    $ git clone https://github.com/lowjoel/wdm
     $ cd wdm
     $ gem build wdm.gemspec
     $ gem install wdm-0.1.0.gem
