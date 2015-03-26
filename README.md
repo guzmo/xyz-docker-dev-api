@@ -1,4 +1,4 @@
-# This is a Repository for developing to XYZ #
+# Local API for development of XYZ #
 
 It will start a local REST Api running on localhost:3232/api/.
 
