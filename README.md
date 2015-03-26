@@ -113,3 +113,16 @@ When inside:
     docker-compose up
 
 This should recreate the boxes and hopefully work.
+
+**Other errors**
+
+If you get this error below: 
+
+    ==> default: Waiting for machine to boot. This may take a few minutes...
+    The guest machine entered an invalid state while waiting for it
+    to boot. Valid states are 'starting, running'. The machine is in the
+    'poweroff' state. Please verify everything is configured
+    properly and try again.
+
+or if you get timeout or ssh problems to the box, the cause may be Virtualizaion(VT-x) being turned off in the BIOS.
+
