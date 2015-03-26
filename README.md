@@ -35,38 +35,10 @@ To use this local api you need to follow these steps (assuming windows):
 
 1. Install msysGit [https://msysgit.github.io/](https://msysgit.github.io/ "msysGit")
 2. Install VirtualBox [https://www.virtualbox.org](https://www.virtualbox.org/wiki/Downloads "VirtualBox")
-3. Install Ruby [http://rubyinstaller.org](https://rubyinstaller.org/downloads "Ruby Installer")
-   - Check "Add Ruby executables to your PATH"
-   - You can also check the other two options if you want, but it is not needed.
-4. Install Ruby Devkit [http://rubyinstaller.org/](http://rubyinstaller.org/downloads "Ruby Installer")
-   - Extract to some permanent location. I chose c:/Ruby22-x64/DevKit
+3. Install Vagrant [https://www.vagrantup.com/](https://www.vagrantup.com/ "Vagrant")
+    - If you get *MissingInterpolationArgument* when you run *vagrant up* you should try to install vagrant as written in section: [Vagrant the special way](#Vagrant-the-special-way)
 
-    ```
-    $ cd /c/Ruby22-x64/DevKit/
-    $ ruby dk.rb init
-    $ ruby dk.rb install
-    ```
-
-5. Install patched version of wdm
-
-    ```
-    $ git clone https://github.com/lowjoel/wdm
-    $ cd wdm
-    $ gem build wdm.gemspec
-    $ gem install wdm-0.1.0.gem
-    ```
-
-6. Install Vagrant
-
-    ```
-    $ git clone https://github.com/mitchellh/vagrant.git
-    $ cd vagrant
-    $ gem install bundler -v 1.7.13
-    $ bundle install
-    $ rake install
-    ```
-
-7. Clone this repo
+4. Clone this repo
 
     ```
     $ git clone https://github.com/guzmo/xyz-docker-dev-api.git
@@ -98,6 +70,40 @@ localhost:27017 (Try going there with a web browser and you should see "It
 looks like you are trying to access MongoDB over HTTP on the native driver
 port.")
 
+## Vagrant the special way
+
+
+1. Install Ruby [http://rubyinstaller.org](https://rubyinstaller.org/downloads "Ruby Installer")
+   - Check "Add Ruby executables to your PATH"
+   - You can also check the other two options if you want, but it is not needed.
+2. Install Ruby Devkit [http://rubyinstaller.org/](http://rubyinstaller.org/downloads "Ruby Installer")
+   - Extract to some permanent location. I chose c:/Ruby22-x64/DevKit
+
+    ```
+    $ cd /c/Ruby22-x64/DevKit/
+    $ ruby dk.rb init
+    $ ruby dk.rb install
+    ```
+
+3. Install patched version of wdm
+
+    ```
+    $ git clone https://github.com/lowjoel/wdm
+    $ cd wdm
+    $ gem build wdm.gemspec
+    $ gem install wdm-0.1.0.gem
+    ```
+
+4. Install Vagrant
+
+    ```
+    $ git clone https://github.com/mitchellh/vagrant.git
+    $ cd vagrant
+    $ gem install bundler -v 1.7.13
+    $ bundle install
+    $ rake install
+    ```
+
 ## Troubleshooting ##
 
 **Something goes wrong when you use *vagrant up:***
@@ -114,7 +120,11 @@ When inside:
 
 This should recreate the boxes and hopefully work.
 
-**Other errors**
+**MissingInterpolationArgument:**
+
+If you get *MissingInterpolationArgument* when you run *vagrant up* you should try to install vagrant as written in section: [Vagrant the special way](#Vagrant-the-special-way)
+
+**Other known errors**
 
 If you get this error below: 
 
