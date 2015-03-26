@@ -4,6 +4,33 @@ It will start a local REST Api running on localhost:3232/api/.
 
 Documentation about the REST API can be found at [https://github.com/Softhouse/laughing-batman](https://github.com/Softhouse/laughing-batman "Laughing-batman")
 
+## Linux 
+1. Clone this repo.
+
+    ```
+    $ git clone https://github.com/guzmo/xyz-docker-dev-api.git
+    ```
+
+2. Start docker deamon.
+
+	```
+    $ sudo docker -d 
+    ```
+
+3. Run docker-comepose.sh
+
+	```
+    $ ./docker-compose.sh
+    ```
+
+4. Start docker
+
+	```
+    $ sudo docker-compose up
+    ```
+
+## Windows/Mac
+
 To use this local api you need to follow these steps (assuming windows):
 
 1. Install msysGit [https://msysgit.github.io/](https://msysgit.github.io/ "msysGit")
@@ -46,7 +73,7 @@ To use this local api you need to follow these steps (assuming windows):
     ```
 
 Inside your local repository you need to create a file called **github_secret.env**.
-The API uses this in production so it is needed here as well.
+The API uses this in production so it is needed here as well. **Secret can be anything during development**.
 
 This file should only contain one row which is
 
