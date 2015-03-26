@@ -36,7 +36,7 @@ To use this local api you need to follow these steps (assuming windows):
 1. Install msysGit [https://msysgit.github.io/](https://msysgit.github.io/ "msysGit")
 2. Install VirtualBox [https://www.virtualbox.org](https://www.virtualbox.org/wiki/Downloads "VirtualBox")
 3. Install Vagrant [https://www.vagrantup.com/](https://www.vagrantup.com/ "Vagrant")
-    - If you get *MissingInterpolationArgument* when you run *vagrant up* you should try to install vagrant as written in section: [Vagrant the special way](#Vagrant-the-special-way)
+    - If you get *MissingInterpolationArgument* when you run *vagrant up* you should try to install vagrant as written in section: [Vagrant-the-special-way](#Vagrant-the-special-way)
 
 4. Clone this repo
 
