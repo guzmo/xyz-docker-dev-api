@@ -70,7 +70,7 @@ localhost:27017 (Try going there with a web browser and you should see "It
 looks like you are trying to access MongoDB over HTTP on the native driver
 port.")
 
-## Vagrant the special way
+## Vagrant-the-special-way
 
 
 1. Install Ruby [http://rubyinstaller.org](https://rubyinstaller.org/downloads "Ruby Installer")
